@@ -1,6 +1,9 @@
 {
   "name": "term",
   "private": true,
+  "repository": {
+    "url": "https://github.com/sam-aldis/ukjp-term"
+  },
   "devDependencies": {
     "lerna": "^3.18.3"
   }

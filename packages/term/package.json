@@ -6,6 +6,9 @@
   "homepage": "",
   "license": "ISC",
   "main": "lib/term.js",
+  "repository": {
+    "url": "https://github.com/sam-aldis/ukjp-term"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
