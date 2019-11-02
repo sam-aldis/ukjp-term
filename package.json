@@ -1,0 +1,7 @@
+{
+  "name": "term",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.18.3"
+  }
+}
