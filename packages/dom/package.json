@@ -1,6 +1,6 @@
 {
   "name": "dom",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "custom terminal element",
   "author": "Sam Aldis <samuel.aldis@owasp.org>",
   "homepage": "",
@@ -21,8 +21,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "commands": "^0.0.0",
+    "commands": "^1.0.0",
     "lit-element": "^2.2.1",
-    "term": "^0.0.0"
+    "term": "^1.0.0"
   }
 }
