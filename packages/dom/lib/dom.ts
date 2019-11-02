@@ -12,7 +12,7 @@ export class Termina extends LitElement {
     @property({type: Number}) theme : number = Themes.default; 
     line_buffer : Array<string> = [];
     @property({type: String}) histBuffer = ""; 
-    history_buffer : Array<string> = [];
+    private history_buffer : Array<any> = [];
     @property({type: String}) curBuffer : string; 
     isTerminal : boolean = false;
     public lineBuffer : string = "";
@@ -29,13 +29,13 @@ export class Termina extends LitElement {
         return Style;
     }
     private updateHistory() {
-        this.history_buffer.push(this.curBuffer);
-        this.histBuffer += `<span>${this.curBuffer}</span>`;
+    this.history_buffer.push(html`<span>${this.curBuffer}</span>`);
+        this.histBuffer += html`<span>${this.curBuffer}</span>`;
            }
     public write(msg: string) {
         let out = html`<b>${msg}</b>`;
         this.history_buffer.push(out);
-        this.histBuffer += `<span>${out}</span>`;
+        this.histBuffer += `${out}`;
     }
     public focus() {
         console.log("focus event"),

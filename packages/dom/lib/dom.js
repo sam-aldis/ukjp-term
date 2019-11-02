@@ -32,13 +32,13 @@ let Termina = class Termina extends LitElement {
         return Style;
     }
     updateHistory() {
-        this.history_buffer.push(this.curBuffer);
-        this.histBuffer += `<span>${this.curBuffer}</span>`;
+        this.history_buffer.push(html `<span>${this.curBuffer}</span>`);
+        this.histBuffer += html `<span>${this.curBuffer}</span>`;
     }
     write(msg) {
         let out = html `<b>${msg}</b>`;
         this.history_buffer.push(out);
-        this.histBuffer += `<span>${out}</span>`;
+        this.histBuffer += `${out}`;
     }
     focus() {
         console.log("focus event"),

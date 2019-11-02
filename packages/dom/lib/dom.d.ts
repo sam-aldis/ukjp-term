@@ -8,7 +8,7 @@ export declare class Termina extends LitElement {
     theme: number;
     line_buffer: Array<string>;
     histBuffer: string;
-    history_buffer: Array<string>;
+    private history_buffer;
     curBuffer: string;
     isTerminal: boolean;
     lineBuffer: string;
