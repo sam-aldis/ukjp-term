@@ -13,6 +13,9 @@ class SW {
         addEventListener("install",  SW.onInstall);
         addEventListener("fetch", SW.onFetch);
     }
+    public static async handleCommands(ev: any) {
+        
+    }
     public static onInstall(ev :any) : void {
      ev.waitUntil(
          caches.open('v0.1')
